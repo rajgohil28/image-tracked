@@ -13,6 +13,30 @@ const configure = () => {
         require('../image-targets/waves.json'),
       ],
     })
+
+    // Request fullscreen on first user interaction (Start button click)
+    const requestFullscreen = () => {
+      const docEl = document.documentElement as any
+      const requestMethods = [
+        'requestFullscreen',
+        'webkitRequestFullscreen',
+        'mozRequestFullScreen',
+        'msRequestFullscreen',
+      ]
+      const method = requestMethods.find(m => docEl[m])
+      if (method) {
+        docEl[method]().catch((err: any) => {
+          console.warn(`Fullscreen request failed: ${err.message}`)
+        })
+      }
+      window.removeEventListener('touchstart', requestFullscreen)
+      window.removeEventListener('mousedown', requestFullscreen)
+    }
+
+    // Listen for the first touch/click which usually corresponds to the 8th Wall "Start" button
+    window.addEventListener('touchstart', requestFullscreen)
+    window.addEventListener('mousedown', requestFullscreen)
+
   } else {
     // If XR8 exists but XrController is not yet ready, wait and try again.
     setTimeout(configure, 100)
