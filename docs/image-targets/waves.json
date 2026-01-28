@@ -1,0 +1,18 @@
+{
+  "imagePath": "image-targets/waves_target.jpeg",
+  "name": "waves",
+  "type": "PLANAR",
+  "properties": {
+    "top": 160,
+    "left": 0,
+    "width": 720,
+    "height": 960,
+    "isRotated": true,
+    "originalWidth": 720,
+    "originalHeight": 1280
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1750181819769,
+  "updated": 1750182349226
+}

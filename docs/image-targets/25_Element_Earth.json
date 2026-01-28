@@ -1,0 +1,18 @@
+{
+  "imagePath": "image-targets/25_Element_Earth_target.png",
+  "name": "25_Element_Earth",
+  "type": "PLANAR",
+  "properties": {
+    "top": 115,
+    "left": 68,
+    "width": 615,
+    "height": 820,
+    "isRotated": false,
+    "originalWidth": 750,
+    "originalHeight": 1050
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1744148047622,
+  "updated": 1744322311726
+}

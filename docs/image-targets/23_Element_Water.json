@@ -1,0 +1,18 @@
+{
+  "imagePath": "image-targets/23_Element_Water_target.png",
+  "name": "23_Element_Water",
+  "type": "PLANAR",
+  "properties": {
+    "top": 112,
+    "left": 65,
+    "width": 620,
+    "height": 827,
+    "isRotated": false,
+    "originalWidth": 750,
+    "originalHeight": 1050
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1744148020369,
+  "updated": 1744322346576
+}
